@@ -1,0 +1,53 @@
+<html>
+  <head>
+        <link rel="stylesheet" type="text/css" href="ui.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="ui.js"></script>
+  </head>
+  <body>
+
+    <div class="mainwindowcolorbackground"></div>
+    <img src="fenster.png" class="back">
+	<img src="exit.png" class="exit">
+	<p id="einzahlenda" class="einzahlen" data-action="einzahlen" onclick="select(this);">EINZAHLEN</p>
+	<p id="abhebenda" class="abheben" data-action="abheben" onclick="select(this);">ABHEBEN</p>
+	<p id="transferda" class="transfer" data-action="transfer" onclick="select(this);">TRANSFERIEREN</p>
+    <div class="pad">
+	  <img src="id.png" class="padid">
+      <div class="padwindow">
+	   <img id="numpadbild" src="numpad.png" class="padimage">
+       <div class="padall">
+          <div class="box">
+           <button value="1">1</button>
+           <button value="2">2</button>
+           <button value="3">3</button>
+           <button value="4">4</button>
+           <button value="5">5</button>
+           <button value="6">6</button>
+           <button value="7">7</button>
+           <button value="8">8</button>
+           <button value="9">9</button>
+           <button value="0">0</button>
+           <button id="delete">
+             <img src="delete.png" class="deleteicon">
+           </button>
+         </div>
+       <button id="confirm">BESTÄTIGEN</button>
+      </div>
+    </div>
+	<h1 id="nameda">Jason Crain</h1>
+    <h2>Kontostand</h2>
+    <h3 id="bank">1.500.000</h3>
+	 <div class="felder">
+	  <div class="eingabe">
+		<input id="mengenfeld" value="" type="betrag" placeholder="MENGE EINGEBEN" maxlength="8">
+	 </div>
+	  <div id="eingabe2">
+	   <input id="idfeld" type="id" placeholder="ID" maxlength="4">
+	  </div>
+	</div>
+  </body>
+</html>

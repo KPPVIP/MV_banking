@@ -1,0 +1,361 @@
+/*Eigene Fonts*/
+@font-face {
+    font-family: 'TT Rounds Neue Condensed';
+    src: local('TT Rounds Neue Condensed Regular'), local('TT-Rounds-Neue-Condensed-Regular'),
+        url('fonts/TTRoundsNeue-CondRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Morandi Cond';
+    src:  url(fonts/fontda2.otf);
+}
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src:  url(fonts/fontda.ttf);
+}
+* {
+    color: rgb(207, 207, 207);
+    font-size: 0.75vw;
+}
+
+body {
+	display:none;
+}
+
+.backm {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0vw;
+    left: 0vw;
+}
+.blur {
+    position: fixed;
+    left: 0vw;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur(0.23vw);
+    background-color: rgba(0, 0, 0, 0.637)
+}
+
+/*img*/
+.back {
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    width: 100%;
+    height: 100%;
+    -webkit-user-drag: none;
+}
+
+.fenster {
+    position: absolute;
+    height: 29vw;
+    width: auto;
+    right: 25vw;
+    top: 9.5vw;
+}
+
+.exit {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    width: auto;
+    height: 5.5vw;
+}
+
+.exit:hover {
+    cursor: pointer;
+	transform: scale(1.05);
+}
+
+#verlassen:active {
+    background: rgb(224, 165, 0);
+}
+#verlassen:hover {
+    box-shadow: rgb(255, 208, 0) 0vw 0vw 1vw 0vw;
+    transition: 0.3s;
+}
+#verlassen {
+    position: absolute;
+    height: 1.65vw;
+    width: 7.6vw;
+    right: 25.9vw;
+    top: 9.5vw;
+    color: white;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    transform: skewx(12deg) translatex(0.5vw);
+    border: none;
+    transition: 0.6s;
+    box-shadow: rgb(0, 0, 0) 0vw 0.1vw 0.3vw 0vw;
+    background: rgb(233,172,0);
+    background: linear-gradient(110deg, rgba(233,172,0,1) 0%, rgba(253,207,0,1) 100%);
+}
+h1 {
+    position: absolute;
+    top: 21.9vw;
+    left: 29.5vw;
+	font-size: 1.6vw;
+    transform: skewx(-12deg);
+    font-family: 'Montserrat-Thin';
+    user-select: none;
+}
+h2 {
+    position: absolute;
+    top: 24.7vw;
+    left: 29.5vw;
+    font-family: 'Montserrat-Thin';
+}
+h3 {
+    position: absolute;
+    top: 25.2vw;
+    left: 29.55vw;
+    text-align: left;
+    font-family: 'Montserrat-Thin';
+	font-size: 1.3vw;
+}
+.padall {
+    position: relative;
+    top: 0.8vw;
+}
+
+.padid {
+    position: absolute;
+	display:none;
+    height: 4.9vw;
+    width: auto;
+    right: 30.2vw;
+    top: 22vw;	
+}
+
+.padwindow {
+    position: absolute;
+    right: 30vw;
+    top: 28.5vw;
+    height: 11.5vw;
+    width: 13vw;
+    border-radius: 0.1vw;
+    background-color: transparent;
+}
+
+.padimage {
+    position: absolute;
+    height: 12.5vw;
+    width: auto;
+    right: 0.5vw;
+    top: -1.2vw;	
+}
+
+.kategorien {
+    position: absolute;
+    top: 0.18vw;
+    left: -0.05vw;
+}
+.kategorien button {
+    transform: scale(0.9);
+    position: absolute;
+    width: 3.4vw;
+    height: 2.4vw;
+    border: none;
+    border-radius: 0.2vw;
+    background-color: rgba(14, 14, 14, 0.61);
+    transition: 0.2s;
+}
+.einzahlen {
+    position: absolute;
+    color: #414141;
+    top: 14.5vw;
+    left: 45vw;
+    font-family: 'Morandi Cond';
+	font-size: 1vw;
+    user-select: none;
+}
+
+.transfer {
+    position: absolute;
+    color: #414141;
+    top: 14.5vw;
+    left: 60vw;
+    font-family: 'Morandi Cond';
+	font-size: 1vw;
+    user-select: none;
+}
+.abheben {
+    position: absolute;
+    color: #414141;
+    top: 14.5vw;
+    left: 53vw;
+    font-family: 'Morandi Cond';
+	font-size: 1vw;
+    user-select: none;
+}
+.abheben:hover {
+    color:white;
+	cursor:pointer;
+    transition: 0.2s;
+}
+.einzahlen:hover {
+    color:white;
+	cursor:pointer;
+    transition: 0.2s;
+}
+.transfer:hover {
+    color:white;
+	cursor:pointer;
+    transition: 0.2s;
+}
+.box {
+    position: absolute;
+    left: 1.75vw;
+    top: 2vw;
+    height: 12vw;
+    width: 10vw;
+}
+.box button {
+    font-family: 'TT Rounds Neue Condensed';
+    font-weight: 900;
+    height: 1.9vw;
+    width: 3vw;
+    border: none;
+    margin: 0.03vw;
+    margin-bottom: 0.1vw;
+    color: white;
+    border-radius: 0.25vw;
+    background-color: rgba(14, 14, 14, 0.01);
+    transition: 0.1s;
+}
+.box button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #2c91fe;
+    transform: scale(1.04);
+    box-shadow: rgba(0, 0, 0, 0.507) 0vw 0vw 0.3vw 0.05vw;
+    transition: 0.1s;
+}
+#confirm {
+    position: absolute;
+    top: 0.45vw;
+    left: 1.8vw;
+    height: 1.3vw;
+    width: 9.45vw;
+    color: rgba(255, 255, 255, 0.411);
+    font-family: 'TT Rounds Neue Condensed';
+    font-weight: 600;
+    border: none;
+    border-radius: 0.3vw;
+    background-color: rgba(14, 14, 14, 0.61);
+    transition: 0.2s;
+    outline: none;
+}
+#confirm:hover {
+    background-color: rgba(42, 255, 42, 0.836);
+    transition: 0.2s;
+    color: white;
+    letter-spacing: 0.1vw;
+}
+#delete {
+    position: absolute;
+    margin-left: 0.2vw;
+    margin-top: 0.03vw;
+    height: 1.9vw;
+    width: 6.2vw;
+}
+#delete:hover {
+    background-color: rgba(255, 41, 41, 0.966);
+}
+.deleteicon {
+    position: absolute;
+    height: 1vw;
+    width: auto;
+    top: 0.45vw;
+    left: 2.5vw;
+}
+.abhebenicon {
+    height: 1.6vw;
+    width: auto;
+}
+.einzahlenicon {
+    height: 1.6vw;
+    width: auto;
+}
+.transfericon {
+    height: 1.6vw;
+    width: auto;
+}
+/*input1betrag*/
+.eingabe {
+    position: absolute;
+    top: 27.95vw;
+    right: 32.9vw;
+    border: none;
+}
+.eingabe input{
+    height: 1.25vw;
+    width: 6.96vw;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+input[type="betrag"] {
+    position: relative;
+    font-family: 'TT Rounds Neue Condensed';
+    font-size: 0.6vw;
+    text-align: center;
+    padding-left: 0vw;
+    padding-bottom: 0vw;
+    color: rgba(117, 255, 75, 0.69);
+    user-select: none;
+}
+.eingabe ::placeholder{
+    font-family: 'TT Rounds Neue Condensed';
+    font-weight: 200;
+    font-size: 0.6vw;
+    color: rgb(135, 255, 98);
+    opacity: 0.3;
+    user-select: none;
+}
+  /*input2id*/
+#eingabe2 {
+    display: none;
+    position: absolute;
+    top: 25.6vw;
+    right: 35.5vw;
+    border: none;
+}
+#eingabe2 input{
+    height: 1.25vw;
+    width: 2.2vw;
+    border-radius: 0.3vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+input[type="id"] {
+    position: relative;
+    font-family: 'TT Rounds Neue Condensed';
+    font-size: 0.7vw;
+    font-weight: 200;
+    text-align: center;
+    padding-left: 0vw;
+    padding-bottom: 0vw;
+    color: rgb(255, 187, 0);
+}
+#eingabe2::placeholder{
+    position: relative;
+    font-family: 'TT Rounds Neue Condensed';
+    font-weight: 900;
+    font-size: 0.7vw;
+    text-align: center;
+    color: rgb(255, 187, 0);
+    opacity: 0.3;
+    user-select: none;
+}
+
+.selected {
+    color:white;
+	transform: scale(1.1);
+    transition: 0.2s;
+}
